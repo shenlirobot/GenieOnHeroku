@@ -1,1 +1,1 @@
-web: julia --project=. -e 'using Pkg; Pkg.instantiate(); include("app.jl");'
+web: julia --project=. --compile=min -e 'using Pkg; Pkg.instantiate(); include("app.jl");'
