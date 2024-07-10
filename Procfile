@@ -1,2 +1,1 @@
-web: julia --project src/app.jl $PORT
-
+web: julia --project=. -e 'using Pkg; Pkg.instantiate(); include("app.jl");'
